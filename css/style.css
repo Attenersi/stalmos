@@ -1,8 +1,8 @@
 /* Główne style Stalmos - oparte na Twoim kodzie SCSS */
 :root {
-    --primary: #FF3E41; /* Czerwony, który masz w kodzie */
+    --primary: #0038B8; /* To jest Twój niebieski (Israel Blue) */
     --secondary: #51CFED;
-    --light: #F8F2F0;
+    --light: #F2F5F9;
     --dark: #060315;
 }
 
@@ -27,3 +27,8 @@
 /* Inne ważne style z szablonu */
 .back-to-top { position: fixed; display: none; right: 45px; bottom: 45px; z-index: 99; }
 .navbar .navbar-nav .nav-link { padding: 35px 15px; font-size: 18px; font-weight: 600; }
+
+.page-header {
+    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(../slides/slid%20(1).jpg) center center no-repeat;
+    background-size: cover;
+}
