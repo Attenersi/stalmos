@@ -1,0 +1,29 @@
+/* Główne style Stalmos - oparte na Twoim kodzie SCSS */
+:root {
+    --primary: #FF3E41; /* Czerwony, który masz w kodzie */
+    --secondary: #51CFED;
+    --light: #F8F2F0;
+    --dark: #060315;
+}
+
+/* Fix dla spinnera, żeby strona się pokazała */
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+#spinner.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+}
+
+/* Dodaj tu swoje poprawki dla kolorów tła */
+.bg-israel-blue { background-color: #0038B8 !important; }
+.text-israel-blue { color: #0038B8 !important; }
+.btn-israel-blue { background-color: #0038B8 !important; color: white !important; }
+
+/* Inne ważne style z szablonu */
+.back-to-top { position: fixed; display: none; right: 45px; bottom: 45px; z-index: 99; }
+.navbar .navbar-nav .nav-link { padding: 35px 15px; font-size: 18px; font-weight: 600; }
