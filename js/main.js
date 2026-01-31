@@ -1,7 +1,7 @@
 (function ($) {
     "use strict";
 
-    // Spinner
+    // Spinner - wyłącza białe kółko po załadowaniu
     var spinner = function () {
         setTimeout(function () {
             if ($('#spinner').length > 0) {
@@ -11,10 +11,10 @@
     };
     spinner();
     
-    
-    // Initiate the wowjs
-    new WOW().init();
-
+    // Inicjalizacja wowjs (animacje przy przewijaniu)
+    if (typeof WOW !== 'undefined') {
+        new WOW().init();
+    }
 
     // Sticky Navbar
     $(window).scroll(function () {
@@ -25,8 +25,7 @@
         }
     });
     
-    
-    // Dropdown on mouse hover
+    // Dropdown na hover (dla komputerów)
     const $dropdown = $(".dropdown");
     const $dropdownToggle = $(".dropdown-toggle");
     const $dropdownMenu = $(".dropdown-menu");
@@ -35,26 +34,25 @@
     $(window).on("load resize", function() {
         if (this.matchMedia("(min-width: 992px)").matches) {
             $dropdown.hover(
-            function() {
-                const $this = $(this);
-                $this.addClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "true");
-                $this.find($dropdownMenu).addClass(showClass);
-            },
-            function() {
-                const $this = $(this);
-                $this.removeClass(showClass);
-                $this.find($dropdownToggle).attr("aria-expanded", "false");
-                $this.find($dropdownMenu).removeClass(showClass);
-            }
+                function() {
+                    const $this = $(this);
+                    $this.addClass(showClass);
+                    $this.find($dropdownToggle).attr("aria-expanded", "true");
+                    $this.find($dropdownMenu).addClass(showClass);
+                },
+                function() {
+                    const $this = $(this);
+                    $this.removeClass(showClass);
+                    $this.find($dropdownToggle).attr("aria-expanded", "false");
+                    $this.find($dropdownMenu).removeClass(showClass);
+                }
             );
         } else {
             $dropdown.off("mouseenter mouseleave");
         }
     });
     
-    
-    // Back to top button
+    // Przycisk powrotu na górę (Back to top)
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.back-to-top').fadeIn('slow');
@@ -67,17 +65,17 @@
         return false;
     });
 
+    // Liczniki (Facts counter)
+    if ($('[data-toggle="counter-up"]').length > 0) {
+        $('[data-toggle="counter-up"]').counterUp({
+            delay: 10,
+            time: 2000
+        });
+    }
 
-    // Facts counter
-    $('[data-toggle="counter-up"]').counterUp({
-        delay: 10,
-        time: 2000
-    });
-
-
-    // Header carousel
+    // Główny Carousel (Owl Carousel)
     $(".header-carousel").owlCarousel({
-        autoplay: false,
+        autoplay: true, // Zmienione na true, żeby slider sam chodził
         smartSpeed: 1500,
         items: 1,
         dots: false,
@@ -89,47 +87,42 @@
         ]
     });
 
-
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
-        autoplay: false,
+        autoplay: true,
         smartSpeed: 1000,
         center: true,
         dots: true,
         loop: true,
         responsive: {
-            0:{
-                items:1
-            },
-            768:{
-                items:2
-            },
-            992:{
-                items:3
-            }
+            0:{ items:1 },
+            768:{ items:2 },
+            992:{ items:3 }
         }
     });
     
-    // Header slider
-  const headerSlider = document.querySelector('.header-slider');
-  const slides = headerSlider.querySelectorAll('.slide');
-  let currentSlide = 0;
+    // Header slider - Twoja własna funkcja (TUTAJ BYŁY BŁĘDY)
+    const headerSlider = document.querySelector('.header-slider');
+    if (headerSlider) {
+        const slides = headerSlider.querySelectorAll('.slide');
+        if (slides.length > 0) {
+            let currentSlide = 0;
+            setInterval(() => {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }, 5000);
 
-  setInterval(() => {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add('active');
-  }, 5000);
-
-  // Add the active class to the first slide
-  slides[0].classList.add('active');
-
-
-  document.addEventListener('contextmenu', function(e) {
-    if (e.target.tagName === 'VIDEO') {
-      e.preventDefault();
+            // Dodaj klasę active do pierwszego slajdu na start
+            slides[0].classList.add('active');
+        }
     }
-  });
+
+    // Blokada prawego przycisku na wideo (opcjonalne)
+    document.addEventListener('contextmenu', function(e) {
+        if (e.target.tagName === 'VIDEO') {
+            e.preventDefault();
+        }
+    });
   
 })(jQuery);
-
