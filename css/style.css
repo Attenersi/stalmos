@@ -151,3 +151,16 @@
     background: #002740;
     color: #b8e3ff;
 }
+
+/* Stylizacja dla pojedynczego elementu usługi w karuzeli */
+.service-carousel .service-item {
+    max-width: 800px; /* Ograniczamy szerokość, żeby opis nie był za długi w jednej linii */
+    margin: 0 auto;   /* Centrujemy kafelek na środku strony */
+    text-align: center;
+}
+
+.service-carousel .service-item img {
+    max-height: 400px; /* Pilnujemy, żeby zdjęcie nie było zbyt wysokie */
+    object-fit: cover;
+    margin: 0 auto;
+}
