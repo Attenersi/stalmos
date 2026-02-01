@@ -124,3 +124,30 @@
 .header-carousel .owl-dots {
     display: none !important;
 }
+
+.service-carousel .owl-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.service-carousel .owl-nav .owl-prev,
+.service-carousel .owl-nav .owl-next {
+    margin: 0 10px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #002740; /* Ciemny granat */
+    background: #b8e3ff; /* Jasny błękit */
+    border-radius: 45px;
+    font-size: 22px;
+    transition: .5s;
+}
+
+.service-carousel .owl-nav .owl-prev:hover,
+.service-carousel .owl-nav .owl-next:hover {
+    background: #002740;
+    color: #b8e3ff;
+}
