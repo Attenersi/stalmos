@@ -81,3 +81,46 @@
     background-color: var(--secondary) !important; 
     color: var(--primary) !important;
 }
+
+/* Pozycjonowanie i stylizacja strzałek karuzeli */
+.header-carousel .owl-nav {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 50%; /* Środek wysokości karuzeli */
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px; /* Odstęp od krawędzi ekranu */
+    z-index: 10;
+    transform: translateY(-50%); /* Idealne wycentrowanie w pionie */
+}
+
+/* Wygląd pojedynczego przycisku (Lewo/Prawo) */
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+    width: 60px; /* Znacznie większe niż domyślnie */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(184, 227, 255, 0.7) !important; /* Jasny błękit z logo (przezroczysty) */
+    color: #002740 !important; /* Ciemny granat z logo */
+    font-size: 24px;
+    border-radius: 50%; /* Okrągłe przyciski */
+    transition: .5s;
+    border: none !important;
+}
+
+/* Efekt po najechaniu myszką */
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-next:hover {
+    background: #002740 !important; /* Zamiana na granat */
+    color: #b8e3ff !important; /* Zamiana na błękit */
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* Ukrycie kropek, jeśli ich nie używamy, by nie robiły bałaganu */
+.header-carousel .owl-dots {
+    display: none !important;
+}
