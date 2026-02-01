@@ -1,12 +1,13 @@
-/* Główne style Stalmos - oparte na Twoim kodzie SCSS */
+/* Główne style Stalmos - Paleta Blue Only */
 :root {
-    --primary: #0038B8; /* To jest Twój niebieski (Israel Blue) */
-    --secondary: #51CFED;
-    --light: #F2F5F9;
-    --dark: #060315;
+    --primary: #002740;    /* Ciemny granat z tła logo */
+    --secondary: #b8e3ff;  /* Jasny błękitny z sygnetu logo */
+    --accent: #b8e3ff;     /* Używamy błękitu jako akcentu zamiast zieleni */
+    --light: #f8fbff;      /* Bardzo jasny błękit na tła sekcji */
+    --dark: #001a2b;       /* Najciemniejszy odcień granatu */
 }
 
-/* Fix dla spinnera, żeby strona się pokazała */
+/* Fix dla spinnera */
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -19,16 +20,64 @@
     transition: opacity .5s ease-out, visibility 0s linear 0s;
 }
 
-/* Dodaj tu swoje poprawki dla kolorów tła */
-.bg-israel-blue { background-color: #0038B8 !important; }
-.text-israel-blue { color: #0038B8 !important; }
-.btn-israel-blue { background-color: #0038B8 !important; color: white !important; }
+/* Klasy pomocnicze Stalmos */
+.bg-primary { background-color: var(--primary) !important; }
+.text-primary { color: var(--primary) !important; }
 
-/* Inne ważne style z szablonu */
-.back-to-top { position: fixed; display: none; right: 45px; bottom: 45px; z-index: 99; }
-.navbar .navbar-nav .nav-link { padding: 35px 15px; font-size: 18px; font-weight: 600; }
+.bg-secondary { background-color: var(--secondary) !important; }
+.text-secondary { color: var(--secondary) !important; }
 
+/* Przyciski brandowe - teraz w błękicie z ciemnym tekstem dla kontrastu */
+.btn-stalmos { 
+    background-color: var(--secondary) !important; 
+    color: var(--primary) !important; /* Ciemny tekst na jasnym tle */
+    border: none;
+    font-weight: 700;
+}
+.btn-stalmos:hover {
+    background-color: var(--primary) !important;
+    color: var(--secondary) !important; /* Odwrócenie kolorów na hoverze */
+}
+
+/* Navbar */
+.navbar .navbar-nav .nav-link { padding: 35px 15px; font-size: 18px; font-weight: 600; color: var(--primary); }
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active { color: var(--secondary); }
+
+/* Nagłówek strony */
 .page-header {
-    background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(../slides/slid%20(1).jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 39, 64, .8), rgba(0, 39, 64, .8)), url(../slides/slid%20(1).jpg) center center no-repeat;
     background-size: cover;
+}
+
+/* Powiększenie karuzeli */
+.header-carousel .owl-carousel-item {
+    position: relative;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+}
+
+.header-carousel .owl-carousel-item img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Nakładka na karuzelę */
+.header-carousel .owl-carousel-item .position-absolute {
+    background: rgba(0, 39, 64, 0.65) !important; 
+}
+
+/* Kolorystyka tekstów w sliderze */
+.header-carousel .owl-carousel-item h1 { color: #ffffff; }
+.header-carousel .owl-carousel-item h5 { color: var(--secondary); text-transform: uppercase; letter-spacing: 2px; }
+
+/* Przyciski powrotu na górę */
+.back-to-top { 
+    background-color: var(--secondary) !important; 
+    color: var(--primary) !important;
 }
