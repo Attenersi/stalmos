@@ -27,25 +27,25 @@
 .bg-secondary { background-color: var(--secondary) !important; }
 .text-secondary { color: var(--secondary) !important; }
 
-/* Przyciski brandowe - teraz w błękicie z ciemnym tekstem dla kontrastu */
+/* Przyciski brandowe */
 .btn-stalmos { 
     background-color: var(--secondary) !important; 
-    color: var(--primary) !important; /* Ciemny tekst na jasnym tle */
+    color: var(--primary) !important;
     border: none;
     font-weight: 700;
 }
 .btn-stalmos:hover {
     background-color: var(--primary) !important;
-    color: var(--secondary) !important; /* Odwrócenie kolorów na hoverze */
+    color: var(--secondary) !important;
 }
 
 /* Navbar */
 .navbar .navbar-nav .nav-link { padding: 35px 15px; font-size: 18px; font-weight: 600; color: var(--primary); }
 .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active { color: var(--secondary); }
 
-/* Nagłówek strony */
+/* Nagłówek strony - POPRAWIONY URL */
 .page-header {
-    background: linear-gradient(rgba(0, 39, 64, .8), rgba(0, 39, 64, .8)), url(../slides/slid%20(1).jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 39, 64, .8), rgba(0, 39, 64, .8)), url("../slides/slid (1).jpg") center center no-repeat;
     background-size: cover;
 }
 
