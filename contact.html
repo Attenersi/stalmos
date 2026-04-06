@@ -94,6 +94,10 @@
                     <div class="bg-light text-center p-5 rounded h-100">
                         <h4 class="text-stalmos mb-4">Szybka Wycena</h4>
                         <form action="https://formsubmit.co/stalmos@op.pl" method="POST">
+                            <input type="hidden" name="_subject" value="Nowe zapytanie ze strony Stalmos">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_next" value="https://stalmos.pl/contact.html">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
                                     <input type="text" name="name" class="form-control border-0 form-h-55" placeholder="Twoje Imię i Nazwisko" required>
@@ -130,45 +134,45 @@
 
     <!-- Footer Start -->
     <footer class="border-top footer-light">
-        <div class="container py-5">
-            <div class="row g-4 justify-content-between">
-                <div class="col-lg-3 col-md-6">
-                    <img src="stalmos_logo_simple_hori.png" class="footer-logo" alt="Stalmos">
-                    <p class="mb-0 footer-muted">Profesjonalne usługi hydrauliczne w Krakowie i okolicach.</p>
+    <div class="container py-5">
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <img src="stalmos_logo_simple_hori.png" class="footer-logo" alt="Stalmos">
+                <p class="mb-0 footer-muted">Profesjonalne usługi hydrauliczne w Krakowie i okolicach.</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold mb-3 footer-heading">Nawigacja</h6>
+                <div class="d-flex flex-column footer-links">
+                    <a href="index.html" class="text-decoration-none footer-link">Strona Główna</a>
+                    <a href="about.html" class="text-decoration-none footer-link">O nas</a>
+                    <a href="service.html" class="text-decoration-none footer-link">Usługi</a>
+                    <a href="contact.html" class="text-decoration-none footer-link">Kontakt</a>
                 </div>
-                <div class="col-lg-2 col-md-6">
-                    <h6 class="fw-bold mb-3 footer-heading">Nawigacja</h6>
-                    <div class="d-flex flex-column footer-links">
-                        <a href="index.html" class="text-decoration-none footer-link">Strona Główna</a>
-                        <a href="about.html" class="text-decoration-none footer-link">O nas</a>
-                        <a href="service.html" class="text-decoration-none footer-link">Usługi</a>
-                        <a href="contact.html" class="text-decoration-none footer-link">Kontakt</a>
-                    </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold mb-3 footer-heading">Kontakt</h6>
+                <div class="d-flex flex-column footer-links">
+                    <span class="footer-link"><i class="fa fa-map-marker-alt me-2 footer-icon"></i>Kraków, Polska</span>
+                    <a href="tel:+48880741813" class="text-decoration-none footer-link"><i class="fa fa-phone me-2 footer-icon"></i>+48 880 741 813</a>
+                    <a href="mailto:stalmos@op.pl" class="text-decoration-none footer-link"><i class="fa fa-envelope me-2 footer-icon"></i>stalmos@op.pl</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h6 class="fw-bold mb-3 footer-heading">Kontakt</h6>
-                    <div class="d-flex flex-column footer-contact-group">
-                        <span><i class="fa fa-map-marker-alt me-2 footer-icon"></i>Kraków, Polska</span>
-                        <a href="tel:+48880741813" class="text-decoration-none" class="footer-link"><i class="fa fa-phone me-2 footer-icon"></i>+48 880 741 813</a>
-                        <a href="mailto:stalmos@op.pl" class="text-decoration-none" class="footer-link"><i class="fa fa-envelope me-2 footer-icon"></i>stalmos@op.pl</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h6 class="fw-bold mb-3 footer-heading">Dane firmy</h6>
-                    <div class="footer-company-data">
-                        NIP: 6783192667<br>
-                        REGON: 389936088<br>
-                        Pn-Pt: 08:00 - 17:00
-                    </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold mb-3 footer-heading">Dane firmy</h6>
+                <div class="d-flex flex-column footer-links">
+                    <span class="footer-link">NIP: 6783192667</span>
+                    <span class="footer-link">REGON: 389936088</span>
+                    <span class="footer-link">Pn–Pt: 08:00 – 17:00</span>
                 </div>
             </div>
         </div>
-        <div class="border-top">
-            <div class="container py-3">
-                <p class="text-center mb-0" class="footer-copy">&copy; Stalmos, Wszelkie Prawa Zastrzeżone</p>
-            </div>
+    </div>
+    <div class="border-top">
+        <div class="container py-3">
+            <p class="text-center mb-0 footer-copy">&copy; Stalmos, Wszelkie Prawa Zastrzeżone</p>
         </div>
-    </footer>
+    </div>
+</footer>
     <!-- Footer End -->
 
     <a href="#" class="btn btn-lg btn-stalmos text-white btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -184,6 +188,8 @@
 </body>
 
 </html>
+
+
 
 
 
