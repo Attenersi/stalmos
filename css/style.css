@@ -27,18 +27,6 @@
 .bg-secondary { background-color: var(--secondary) !important; }
 .text-secondary { color: var(--secondary) !important; }
 
-/* Przyciski brandowe */
-.btn-stalmos { 
-    background-color: var(--secondary) !important; 
-    color: var(--primary) !important;
-    border: none;
-    font-weight: 700;
-}
-.btn-stalmos:hover {
-    background-color: var(--primary) !important;
-    color: var(--secondary) !important;
-}
-
 /* Navbar */
 .navbar .navbar-nav .nav-link { padding: 35px 15px; font-size: 18px; font-weight: 600; color: var(--primary); }
 .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link.active { color: var(--secondary); }
@@ -163,4 +151,285 @@
     max-height: 400px; /* Pilnujemy, żeby zdjęcie nie było zbyt wysokie */
     object-fit: cover;
     margin: 0 auto;
+}
+
+/* Shared page styles moved from HTML <style> blocks */
+.bg-stalmos {
+    background-color: #002740 !important;
+}
+
+.text-stalmos {
+    color: #002740 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-bottom: 3px solid transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #002740;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: #002740 !important;
+    border-bottom: 3px solid #002740;
+}
+
+.border-stalmos {
+    border-color: #002740 !important;
+}
+
+.navbar {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.btn-stalmos {
+    background-color: #b8e3ff !important;
+    color: #002740 !important;
+    font-weight: 700;
+    border: none !important;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.btn-stalmos:hover {
+    background-color: #002740 !important;
+    color: #b8e3ff !important;
+}
+
+.service-card-icon,
+.why-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    background: #002740;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.contact-box {
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.8;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    letter-spacing: -0.02em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+}
+
+.service-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.service-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 40px rgba(0, 39, 64, 0.1);
+}
+
+.container-xxl:nth-of-type(even) {
+    background-color: var(--light);
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: 0 0 0 3px rgba(0, 39, 64, 0.12);
+    border-color: #002740;
+}
+
+.footer {
+    background: linear-gradient(180deg, #001a2b 0%, #002740 100%) !important;
+}
+
+/* Consistent utility classes replacing inline styles */
+.navbar-stalmos-border {
+    border-color: #002740 !important;
+}
+
+.navbar-logo-img {
+    width: 120px;
+}
+
+.navbar-contact-group {
+    gap: 20px;
+}
+
+.navbar-contact-link {
+    gap: 8px;
+    color: #002740;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.navbar-contact-separator {
+    color: #ccc;
+}
+
+.breadcrumb-compact {
+    font-size: 14px;
+}
+
+.breadcrumb-home-link {
+    color: #002740;
+}
+
+.breadcrumb-current {
+    color: #6c757d;
+}
+
+.hero-section {
+    min-height: 80vh;
+}
+
+.hero-bg-image {
+    object-fit: cover;
+}
+
+.hero-overlay {
+    background: rgba(0, 39, 64, 0.6);
+}
+
+.hero-kicker {
+    color: #b8e3ff;
+    letter-spacing: 3px;
+}
+
+.hero-description {
+    opacity: 0.9;
+}
+
+.hero-btn-primary {
+    background-color: #b8e3ff;
+    color: #002740;
+    font-weight: 700;
+    border: none;
+}
+
+.hero-btn-secondary {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid #fff;
+}
+
+.min-h-400 {
+    min-height: 400px;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.form-h-55 {
+    height: 55px;
+}
+
+.form-h-120 {
+    height: 120px;
+}
+
+.footer-light {
+    background-color: #f8fbff;
+}
+
+.footer-logo {
+    width: 140px;
+    margin-bottom: 16px;
+}
+
+.footer-muted {
+    color: #5a6a78;
+    font-size: 14px;
+}
+
+.footer-heading {
+    color: #002740;
+}
+
+.footer-links {
+    gap: 8px;
+}
+
+.footer-link {
+    color: #5a6a78;
+    font-size: 14px;
+}
+
+.footer-contact-group {
+    gap: 8px;
+    font-size: 14px;
+    color: #5a6a78;
+}
+
+.footer-icon {
+    color: #002740;
+}
+
+.footer-company-data {
+    font-size: 14px;
+    color: #5a6a78;
+    line-height: 1.8;
+}
+
+.footer-copy {
+    font-size: 13px;
+    color: #8a95a0;
+}
+
+.service-image-wrap {
+    border-radius: 12px;
+}
+
+.service-image {
+    object-fit: cover;
+    height: 280px;
+    width: 100%;
+}
+
+.contact-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #002740;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.map-min-h-420 {
+    min-height: 420px;
+}
+
+.map-frame {
+    border: 0;
 }

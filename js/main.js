@@ -73,58 +73,50 @@
         });
     }
 
-    // Główny Carousel (Owl Carousel)
-    $(".header-carousel").owlCarousel({
-        autoplay: true, // Zmienione na true, żeby slider sam chodził
-        smartSpeed: 1500,
-        items: 1,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
-        ]
-    });
+    // Główny / service / testimonials carousel (jeśli Owl jest dostępny na stronie)
+    if ($.fn.owlCarousel) {
+        $(".header-carousel").owlCarousel({
+            autoplay: true,
+            smartSpeed: 1500,
+            items: 1,
+            dots: false,
+            loop: true,
+            nav: true,
+            navText: [
+                '<i class="bi bi-chevron-left"></i>',
+                '<i class="bi bi-chevron-right"></i>'
+            ]
+        });
 
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        center: true,
-        dots: true,
-        loop: true,
-        responsive: {
-            0:{ items:1 },
-            768:{ items:2 },
-            992:{ items:3 }
-        }
-    });
-    
-// Service carousel - teraz tylko 1 element naraz
-$(".service-carousel").owlCarousel({
-    autoplay: true,
-    smartSpeed: 1000,
-    margin: 0,        // Zmieniamy margines na 0, bo jest tylko 1 element
-    loop: true,
-    dots: false,
-    nav : true,
-    navText : [
-        '<i class="bi bi-chevron-left"></i>',
-        '<i class="bi bi-chevron-right"></i>'
-    ],
-    responsive: {
-        0:{
-            items:1
-        },
-        768:{
-            items:1   // Zmieniono z 2 na 1
-        },
-        992:{
-            items:1   // Zmieniono z 3 na 1
-        }
+        $(".testimonial-carousel").owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            center: true,
+            dots: true,
+            loop: true,
+            responsive: {
+                0: { items: 1 },
+                768: { items: 2 },
+                992: { items: 3 }
+            }
+        });
+
+        $('.service-carousel').owlCarousel({
+            autoplay: true,
+            smartSpeed: 1000,
+            center: true,
+            margin: 30,
+            dots: false,
+            loop: true,
+            nav: true,
+            navText: ['<i class="bi bi-arrow-left"></i>', '<i class="bi bi-arrow-right"></i>'],
+            responsive: {
+                0: { items: 1 },
+                768: { items: 2 },
+                992: { items: 3 }
+            }
+        });
     }
-});
 
     // Header slider - Twoja własna funkcja (TUTAJ BYŁY BŁĘDY)
     const headerSlider = document.querySelector('.header-slider');

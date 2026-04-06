@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="utf-8">
     <title>Profesjonalne Usługi Hydrauliczne | Stalmos</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="keywords" content="hydraulik, usługi hydrauliczne, naprawa hydrauliki, instalacje wodno-kanalizacyjne, ogrzewanie, awarie hydrauliczne, serwis hydrauliczny, montaż sanitarny, naprawa rur, ogrzewanie centralne">
-    <meta name="description" content="Profesjonalne usługi hydrauliczne: naprawy, montaż instalacji wodno-kanalizacyjnych, usuwanie awarii, centralne ogrzewanie oraz kompleksowy serwis hydrauliczny. [Nazwa Firmy Taty] – Twój zaufany hydraulik.">
+    <meta name="description" content="Profesjonalne usługi hydrauliczne: naprawy, montaż instalacji wodno-kanalizacyjnych, usuwanie awarii, centralne ogrzewanie oraz kompleksowy serwis hydrauliczny. Stalmos – Twój zaufany hydraulik.">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -23,7 +23,6 @@
 
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -33,69 +32,44 @@
 
     <link rel="icon" href="favicon/Favicon 35x35.png" type="image/png">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-
-    <style>
-    /* Główne kolory STALMOS */
-    .bg-israel-blue {
-        background-color: #002740 !important; /* Ciemny granat */
+    <meta property="og:title" content="Stalmos — Profesjonalne Usługi Hydrauliczne w Krakowie">
+    <meta property="og:description" content="Kompleksowe instalacje hydrauliczne, naprawy i serwis. Szybka reakcja na awarie w Krakowie i okolicach.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pl_PL">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Stalmos",
+      "description": "Profesjonalne usługi hydrauliczne w Krakowie: instalacje, naprawy, awarie, ogrzewanie podłogowe, piony sanitarne.",
+      "url": "https://stalmos.pl",
+      "telephone": "+48880741813",
+      "email": "stalmos@op.pl",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kraków",
+        "addressCountry": "PL"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.0647,
+        "longitude": 19.9450
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Kraków"
+      },
+      "priceRange": "$$",
+      "image": "stalmos_logo_simple.png",
+      "sameAs": []
     }
-
-    /* ZMIANA: Teksty na białym tle muszą być ciemne */
-    .text-israel-blue, 
-    .navbar-light .navbar-nav .nav-link,
-    .navbar-light .navbar-nav .nav-link.active,
-    .navbar-nav .nav-link:hover,
-    h4.m-0, 
-    h4.m-0 a {
-        color: #002740 !important; 
-    }
-
-    /* Nawigacja - lepsza czytelność i interakcje */
-    .navbar-light .navbar-nav .nav-link {
-        font-size: 17px;
-        font-weight: 600;
-        padding: 8px 16px;
-        border-radius: 50px;
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .navbar-light .navbar-nav .nav-link:hover,
-    .navbar-light .navbar-nav .nav-link:focus,
-    .navbar-light .navbar-nav .nav-link.active {
-        background-color: #f8f9fa;
-        color: #002740 !important;
-    }
-
-    /* Błękit zostawiamy tylko dla ikon jako akcent */
-    .fa-phone, .bi-phone, .fa-envelope {
-        color: #b8e3ff !important;
-    }
-
-    /* Naprawa obramowania góry strony */
-    .border-israrl, .border-israel {
-        border-color: #002740 !important;
-    }
-
-    /* Mniejsza wysokość całego paska nawigacji */
-    .navbar {
-        padding-top: 0.25rem;
-        padding-bottom: 0.25rem;
-    }
-
-    /* Przycisk - jasny z ciemnym tekstem */
-    .btn-israel-blue {
-        background-color: #b8e3ff !important;
-        color: #002740 !important;
-        font-weight: 700;
-        border: none !important;
-    }
-
-    .btn-israel-blue:hover {
-        background-color: #002740 !important;
-        color: #b8e3ff !important;
-    }
-</style>
+    </script>
 </head>
 
 <body>
@@ -107,191 +81,91 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-israrl sticky-top p-0 ">
-        <a href="index.html" class="navbar-brand bg-israel-blue d-flex align-items-center px-4 px-lg-5">
-            <h2 class="mb-2 text-white p-0 wow fadeInLeft"></h2>
-            <div class="container d-flex justify-content-center wow fadeInRight">
-                <img src="stalmos_logo_simple.png" style="width: 150px;" class="img-fluid" alt="Logo Stalmos">
-            </div>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 sticky-top p-0 navbar-stalmos-border">
+        <a href="index.html" class="navbar-brand bg-stalmos d-flex align-items-center px-4 px-lg-5">
+            <img src="stalmos_logo_simple.png" class="img-fluid navbar-logo-img" alt="Logo Stalmos">
         </a>
 
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse wow fadeInUp" id="navbarCollapse">
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.html" class="nav-item nav-link active">Strona Główna</a>
                 <a href="about.html" class="nav-item nav-link">O nas</a>
                 <a href="service.html" class="nav-item nav-link">Usługi</a>
+                <a href="contact.html" class="nav-item nav-link">Kontakt</a>
             </div>
-            <div class="ms-3">
-                <a href="contact.html" class="btn btn-israel-blue text-white rounded-pill px-4 py-2">Kontakt</a>
+            <div class="d-none d-lg-flex align-items-center ms-4 pe-lg-4 navbar-contact-group">
+                <a href="tel:+48880741813" class="text-decoration-none d-flex align-items-center navbar-contact-link">
+                    <i class="fa fa-phone footer-icon"></i>+48 880 741 813
+                </a>
+                <span class="navbar-contact-separator">|</span>
+                <a href="mailto:stalmos@op.pl" class="text-decoration-none navbar-contact-link">
+                    stalmos@op.pl
+                </a>
             </div>
-            <h4 class="m-0 pe-lg-5 d-none d-lg-block wow fadeInRight"><i class="fa fa-phone text-israel-blue me-3"></i><a
-                    href="tel:+48880741813" class="text-israel-blue text-decoration-none">+48 880 741 813</a> | <a
-                    href="mailto:stalmos@op.pl" class="text-israel-blue text-decoration-none">stalmos@op.pl</a></h4>
         </div>
     </nav>
     <!-- Navbar End -->
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5">
-        <div class="owl-carousel header-carousel header-slider position-relative mb-5">
-
-            <!-- Slide 1 -->
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="https://placehold.co/1920x800?text=Slajd+1" alt="">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(6, 3, 21, .5);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Stalmos</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">
-                                    Stalmos – Profesjonalne Instalacje Sanitarne i Grzewcze
-                                </h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">
-                                    Kompleksowe usługi hydrauliczne w Krakowie i okolicach. Łączymy najwyższą jakość wykonania z konkurencyjnymi cenami. Twój zaufany partner na lata.
-                                </p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">
-                                    Skontaktuj się z nami
-                                </a>
-                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">
-                                    Nasze Usługi
-                                </a>
-                            </div>
-                        </div>
+    <section class="position-relative hero-section">
+        <img src="TWOJE_ZDJECIE.jpg" class="w-100 h-100 position-absolute top-0 start-0 hero-bg-image" alt="Stalmos - hydraulik Kraków" loading="eager">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center hero-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h5 class="text-uppercase mb-3 hero-kicker">Stalmos</h5>
+                        <h1 class="display-3 text-white mb-4 fw-bold">Profesjonalne Instalacje Sanitarne i Grzewcze</h1>
+                        <p class="fs-5 text-white mb-4 pb-2 hero-description">Kompleksowe usługi hydrauliczne w Krakowie i okolicach. Łączymy najwyższą jakość wykonania z konkurencyjnymi cenami.</p>
+                        <a href="contact.html" class="btn py-2 px-4 py-md-3 px-md-5 me-2 me-md-3 animated slideInLeft hero-btn-primary">Skontaktuj się z nami</a>
+                        <a href="service.html" class="btn py-2 px-4 py-md-3 px-md-5 animated slideInRight hero-btn-secondary">Nasze Usługi</a>
                     </div>
                 </div>
             </div>
-
-            <!-- Slide 2 -->
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="https://placehold.co/1920x800?text=Slajd+2" alt="Slide 2">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(6, 3, 21, .5);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Stalmos</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">
-                                    Instalacje dla Inwestycji i Deweloperów
-                                </h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">
-                                    Obsługujemy duże obiekty: hotele, lokale usługowe oraz budynki wielorodzinne. Wykonujemy pełne piony sanitarne i systemy grzewcze z dbałością o każdy detal.
-                                </p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">
-                                    Skontaktuj się z nami
-                                </a>
-                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">
-                                    Nasze Usługi
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 3 -->
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="https://placehold.co/1920x800?text=Slajd+3" alt="Slide 3">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(6, 3, 21, .5);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Stalmos</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">
-                                    Niezawodna Hydraulika dla Twojego Domu
-                                </h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">
-                                    Od mniejszych modyfikacji po tworzenie kompletnych systemów hydraulicznych w domach jednorodzinnych. Rzetelna wycena i brak ukrytych kosztów.
-                                </p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">
-                                    Skontaktuj się z nami
-                                </a>
-                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">
-                                    Nasze Usługi
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 4 -->
-            <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="https://placehold.co/1920x800?text=Slajd+4" alt="Slide 4">
-                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
-                    style="background: rgba(6, 3, 21, .5);">
-                    <div class="container">
-                        <div class="row justify-content-start">
-                            <div class="col-10 col-lg-8">
-                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Stalmos</h5>
-                                <h1 class="display-3 text-white animated slideInDown mb-4">
-                                    Szybka Reakcja i Pogotowie Hydrauliczne
-                                </h1>
-                                <p class="fs-5 fw-medium text-white mb-4 pb-2">
-                                    Cenimy Twój czas. Gwarantujemy błyskawiczny kontakt, a w przypadku nagłych awarii na terenie Krakowa działamy najszybciej jak to możliwe.
-                                </p>
-                                <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">
-                                    Skontaktuj się z nami
-                                </a>
-                                <a href="" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">
-                                    Nasze Usługi
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
+    </section>
     <!-- Carousel End -->
-
-    <div class="container d-flex justify-content-center wow fadeInUp">
-        <img src="images/Logo.JPG" style="width: 300px;" class="img-fluid" alt="">
-    </div>
 
     <!-- About Start -->
     <div class="container-fluid overflow-hidden py-5 px-lg-0">
         <div class="container about py-5 px-lg-0">
             <div class="row g-5 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="col-lg-6 ps-lg-0 wow fadeInLeft min-h-400" data-wow-delay="0.1s">
                     <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100"
-                            src="https://placehold.co/600x400?text=Zdjecie+Taty" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100 object-cover"
+                            src="https://placehold.co/600x400?text=Zdjecie+Taty" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="text-israel-blue text-uppercase mb-3">Twoi hydraulicy w Krakowie</h6>
                     <h1 class="mb-5">Stalmos</h1>
-                    <p class="mb-5">Stalmos to firma hydrauliczna z wieloletnim doświadczeniem w branży. Obsługujemy zarówno duże inwestycje, jak i domy jednorodzinne oraz bloki mieszkalne. Oferujemy kompleksowe instalacje, sprawny serwis i szybkie usuwanie awarii. Jakość i zadowolenie klienta są naszym priorytetem – niezależnie od wielkości zlecenia.</p>
+                    <p class="mb-5">Stalmos to doświadczona firma hydrauliczna z Krakowa. Wykonujemy instalacje, modernizacje i naprawy dla domów, mieszkań oraz inwestycji, stawiając na terminowość i jakość wykonania.</p>
                     <div class="row g-4 mb-5">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                            <i class="fa fa-check-circle fa-3x text-israel-blue mb-3"></i>
+                            <i class="fa fa-check-circle fa-3x text-stalmos mb-3"></i>
                             <h5>Darmowa Wycena</h5>
                             <p class="m-0">Zapewniamy bezpłatną i rzetelną wycenę każdej usługi hydraulicznej.</p>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                            <i class="fa fa-bolt fa-3x text-israel-blue mb-3"></i>
+                            <i class="fa fa-bolt fa-3x text-stalmos mb-3"></i>
                             <h5>Szybka Reakcja w Krakowie</h5>
                             <p class="m-0">Gwarantujemy błyskawiczną reakcję na nagłe awarie hydrauliczne w Krakowie i okolicach.</p>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.9s">
-                            <i class="fa fa-briefcase fa-3x text-israel-blue mb-3"></i>
+                            <i class="fa fa-briefcase fa-3x text-stalmos mb-3"></i>
                             <h5>Wieloletnie Doświadczenie</h5>
                             <p class="m-0">Posiadamy bogate doświadczenie w instalacjach i naprawach hydraulicznych każdego typu.</p>
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.9s">
-                            <i class="fa fa-fire fa-3x text-israel-blue mb-3"></i>
-                            <h5>Nowoczesne Systemy Grzewcze</h5>
-                            <p class="m-0">Montaż ekologicznych i wydajnych systemów ogrzewania, w tym pomp ciepła i ogrzewania podłogowego.</p>
+                            <i class="fa fa-tools fa-3x text-stalmos mb-3"></i>
+                            <h5>Rzetelny Serwis</h5>
+                            <p class="m-0">Realizujemy naprawy i modernizacje instalacji hydraulicznych bez zbędnej zwłoki.</p>
                         </div>
                     </div>
-                    <a href="about.html" class="btn btn-israel-blue text-white py-3 px-5">Przeczytaj o nas więcej</a>
+                    <a href="about.html" class="btn btn-stalmos text-white py-3 px-5">Przeczytaj o nas więcej</a>
                 </div>
             </div>
         </div>
@@ -299,247 +173,66 @@
     <!-- About End -->
 
 
-    <!-- Fact Start -->
-    <div class="container-xxl py-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-israel-blue text-uppercase mb-3">Nasze Usługi</h6>
-                    <h1 class="mb-5">Specjalistyczne Usługi Hydrauliczne</h1>
-                    <p class="mb-5">
-                        Zajmujemy się kompleksowymi instalacjami wodno-kanalizacyjnymi dla inwestorów i obiektów komercyjnych, 
-                        modernizacją oraz serwisem instalacji domowych, a także profesjonalnym wykonaniem pionów sanitarnych. 
-                        Działamy terminowo i z dbałością o każdy detal. 
-                        Każda realizacja to dla nas kolejny dowód zaufania od klientów.
-                    </p>
-                    <div class="d-flex align-items-center mb-4 ms-0 ms-md-3 ms-lg-5">
-                        <div class="d-flex align-items-center justify-content-center bg-israel-blue text-white flex-shrink-0" style="width: 65px; height: 65px; border-radius: 8px;">
-                            <i class="fa fa-building fa-2x"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h6>Instalacje Inwestycyjne</h6>
-                            <h3 class="text-israel-blue m-0 fs-5">Kompleksowa obsługa hoteli i deweloperów</h3>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center mb-4 ms-0 ms-md-3 ms-lg-5">
-                        <div class="d-flex align-items-center justify-content-center bg-israel-blue text-white flex-shrink-0" style="width: 65px; height: 65px; border-radius: 8px;">
-                            <i class="fa fa-home fa-2x"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h6>Hydraulika Domowa</h6>
-                            <h3 class="text-israel-blue m-0 fs-5">Serwis i instalacje w mieszkaniach i domach</h3>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center ms-0 ms-md-3 ms-lg-5">
-                        <div class="d-flex align-items-center justify-content-center bg-israel-blue text-white flex-shrink-0" style="width: 65px; height: 65px; border-radius: 8px;">
-                            <i class="fa fa-water fa-2x"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h6>Piony Sanitarne</h6>
-                            <h3 class="text-israel-blue m-0 fs-5">Wykonanie i wymiana pionów kanalizacyjnych</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
-                    <div class="bg-israel-blue p-4 mb-4 w-100 wow fadeIn" style="max-width: 450px;" data-wow-delay="0.3s">
-                        <i class="fa fa-users fa-2x text-white mb-3"></i>
-                        <h2 class="text-white mb-2" data-toggle="counter-up">250</h2>
-                        <p class="text-white mb-0">Zadowoleni Klienci!</p>
-                    </div>
-                    <div class="bg-israel-blue p-4 mb-4 w-100 wow fadeIn" style="max-width: 450px;" data-wow-delay="0.5s">
-                        <i class="fa fa-wrench fa-2x text-white mb-3"></i>
-                        <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
-                        <p class="text-white mb-0">Zamontowane Rury!</p>
-                    </div>
-                    <div class="bg-israel-blue p-4 w-100 wow fadeIn" style="max-width: 450px;" data-wow-delay="0.7s">
-                        <i class="fa fa-star fa-2x text-white mb-3"></i>
-                        <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
-                        <p class="text-white mb-0">Nasze Opinie!</p>
-                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Fact End -->
-
-
-    <!-- Service Start --
+    <!-- Service Start -->
     <div class="container-xxl py-5">
         <div class="container py-5">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-israel-blue text-uppercase">Nasza Oferta</h6>
-                <h1 class="mb-5">Specjalistyczne Usługi Hydrauliczne</h1>
+                <h1 class="mb-5">Najczęściej Wybierane Usługi</h1>
             </div>
-            <div class="owl-carousel service-carousel wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="https://placehold.co/400x300?text=Inwestycje" alt="Instalacje inwestycyjne">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item p-4 h-100">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="https://placehold.co/400x300?text=Instalacje" alt="Instalacje grzewcze i sanitarne">
+                        </div>
+                        <h5 class="mb-3">Instalacje Systemów Hydraulicznych</h5>
+                        <p class="mb-0">Kompleksowe wykonanie systemów hydraulicznych: instalacje wodne, kanalizacyjne i grzewcze dla domów i inwestycji.</p>
                     </div>
-                    <h4 class="mb-3">Instalacje Inwestycyjne</h4>
-                    <p>Kompleksowe instalacje sanitarne i grzewcze dla hoteli, sklepów i obiektów komercyjnych.</p>
-                    <a class="btn-slide mt-2" href="service.html"><i class="fa fa-arrow-right"></i><span>Szczegóły</span></a>
                 </div>
-                <div class="service-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="https://placehold.co/400x300?text=Hydraulika+Domowa" alt="Hydraulika domowa">
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item p-4 h-100">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="https://placehold.co/400x300?text=Hydraulika+Domowa" alt="Hydraulika domowa">
+                        </div>
+                        <h5 class="mb-3">Hydraulika Domowa</h5>
+                        <p class="mb-0">Naprawy i modernizacje instalacji w mieszkaniach oraz domach jednorodzinnych.</p>
                     </div>
-                    <h4 class="mb-3">Hydraulika Domowa</h4>
-                    <p>Niezawodne systemy hydrauliczne dla domów. Najwyższa jakość wykonania w atrakcyjnych cenach.</p>
-                    <a class="btn-slide mt-2" href="service.html"><i class="fa fa-arrow-right"></i><span>Szczegóły</span></a>
                 </div>
-                <div class="service-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="https://placehold.co/400x300?text=Piony+Sanitarne" alt="Piony sanitarne">
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item p-4 h-100">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="https://placehold.co/400x300?text=Awarie" alt="Awarie i naprawy">
+                        </div>
+                        <h5 class="mb-3">Awarie i Naprawy</h5>
+                        <p class="mb-0">Szybka interwencja przy wyciekach, niedrożnościach i innych nagłych problemach hydraulicznych.</p>
                     </div>
-                    <h4 class="mb-3">Piony Sanitarne</h4>
-                    <p>Wymiana i montaż głównych pionów wodno-kanalizacyjnych dla budynków wielorodzinnych.</p>
-                    <a class="btn-slide mt-2" href="service.html"><i class="fa fa-arrow-right"></i><span>Szczegóły</span></a>
                 </div>
-                <div class="service-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="https://placehold.co/400x300?text=Pompy+Ciepla" alt="Systemy grzewcze">
+                <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item p-4 h-100">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="https://placehold.co/400x300?text=Piony+Sanitarne" alt="Piony sanitarne">
+                        </div>
+                        <h5 class="mb-3">Piony Sanitarne</h5>
+                        <p class="mb-0">Wymiana oraz montaż pionów wodno-kanalizacyjnych w budynkach wielorodzinnych.</p>
                     </div>
-                    <h4 class="mb-3">Systemy Grzewcze</h4>
-                    <p>Montaż ekologicznych systemów ogrzewania, w tym pomp ciepła i ogrzewania podłogowego.</p>
-                    <a class="btn-slide mt-2" href="service.html"><i class="fa fa-arrow-right"></i><span>Szczegóły</span></a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Service End -->
 
-    <!-- Feature Start -->
-    <div class="container-fluid overflow-hidden py-5 px-lg-0">
-    <div class="container feature py-5 px-lg-0">
-        <div class="row g-5 mx-lg-0">
-            <div class="col-lg-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s" style="min-height: 400px;">
-                <div class="position-relative h-100">
-                    <img class="position-absolute img-fluid w-100 h-100"
-                        src="https://placehold.co/800x500?text=Realizacja" style="object-fit: cover;"
-                        alt="Realizacja Stalmos">
-                </div>
-            </div>
-            
-            <div class="col-lg-6 feature-text ps-lg-5 pe-lg-3 wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-israel-blue text-uppercase mb-3">Dlaczego my?</h6>
-                <h1 class="mb-5">Twój Zaufany Hydraulik w Krakowie</h1>
-                
-                <div class="d-flex align-items-center mb-5 wow fadeInUp" data-wow-delay="0.3s">
-                    <i class="fa fa-drafting-compass text-israel-blue fa-3x flex-shrink-0"></i>
-                    <div class="ms-4">
-                        <h5 class="mb-1">Indywidualne Podejście</h5>
-                        <p class="mb-0">Dopasowujemy instalacje grzewcze i sanitarne do specyfiki Twojego budynku, dbając o optymalizację kosztów.</p>
-                    </div>
-                </div>
-                
-                <div class="d-flex align-items-center mb-5 wow fadeIn" data-wow-delay="0.5s">
-                    <i class="fa fa-tools text-israel-blue fa-3x flex-shrink-0"></i>
-                    <div class="ms-4">
-                        <h5 class="mb-1">Szybka Reakcja</h5>
-                        <p class="mb-0">W przypadku nagłych awarii wodno-kanalizacyjnych na terenie Krakowa i okolic działamy błyskawicznie.</p>
-                    </div>
-                </div>
-                
-                <div class="d-flex align-items-center mb-0 wow fadeInUp" data-wow-delay="0.7s">
-                    <i class="fa fa-shield-alt text-israel-blue fa-3x flex-shrink-0"></i>
-                    <div class="ms-4">
-                        <h5 class="mb-1">Gwarancja Jakości</h5>
-                        <p class="mb-0">Pracujemy wyłącznie na sprawdzonych materiałach, zapewniając absolutną szczelność i bezawaryjność na lata.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <!-- Feature End -->
-
-    <!-- Pricing Start
-    <div class="container-xxl py-5">
-        <div class="container py-5">
-            <div class="text-center wow fadeInRight" data-wow-delay="0.1s">
-                <h6 class="text-israel-blue text-uppercase">Pricing Plan</h6>
-                <h1 class="mb-5">Perfect Pricing Plan</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4 wow fadeInLeft" data-wow-delay="0.3s">
-                    <div class="price-item">
-                        <div class="border-bottom p-4 mb-4">
-                            <h5 class="text-israel-blue mb-1">Basic Plan</h5>
-                            <h1 class="display-5 mb-0">
-                                <small class="align-top" style="font-size: 22px; line-height: 45px;">Rs</small>49.00<small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;"></small>
-                            </h1>
-                        </div>
-                        <div class="p-4 pt-0">
-                            <p><i class="fa fa-star text-israel-blue me-3"></i></p>
-                            <p><i class="fa fa-star text-israel-blue me-3"></i></p>
-                            <p><i class="fa fa-star text-israel-blue me-3"></i></p>
-                            <p><i class="fa fa-star text-israel-blue me-3"></i></p>
-                            <p><i class="fa fa-star text-israel-blue me-3"></i></p>
-                            <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span >Order Now</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="price-item">
-                        <div class="border-bottom p-4 mb-4">
-                            <h5 class="text-israel-blue mb-1">Standard Plan</h5>
-                            <h1 class="display-5 mb-0">
-                                <small class="align-top" style="font-size: 22px; line-height: 45px;">Rs</small>99.00<small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;"></small>
-                            </h1>
-                        </div>
-                        <div class="p-4 pt-0">
-                            <p><i class="fa fa-star text-israel-blue me-3"></i></p>
-                            <p><i class="fa fa-star text-israel-blue me-3"></i></p>
-                            <p><i class="fa fa-star text-israel-blue me-3"></i></p>
-                            <p><i class="fa fa-star text-israel-blue me-3"></i></p>
-                            <p><i class="fa fa-star text-israel-blue me-3"></i></p>
-                            <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span >Order Now</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInRight" data-wow-delay="0.7s">
-                    <div class="price-item">
-                        <div class="border-bottom p-4 mb-4">
-                            <h5 class="text-israel-blue mb-1">Advanced Plan</h5>
-                            <h1 class="display-5 mb-0">
-                                <small class="align-top" style="font-size: 22px; line-height: 45px;">Rs</small>149.00<small
-                                    class="align-bottom" style="font-size: 16px; line-height: 40px;"></small>
-                            </h1>
-                        </div>
-                        <div class="p-4 pt-0">
-                            <p><i class="fa fa-star text-israel-blue me-3"></i></p>
-                            <p><i class="fa fa-star text-israel-blue me-3"></i></p>
-                            <p><i class="fa fa-star text-israel-blue me-3"></i></p>
-                            <p><i class="fa fa-star text-israel-blue me-3"></i></p>
-                            <p><i class="fa fa-star text-israel-blue me-3"></i></p>
-                            <a class="btn-slide mt-2" href=""><i class="fa fa-arrow-right"></i><span >Order Now</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     Pricing End -->
-
-
     <!-- Quote Start -->
     <div class="container-xxl py-5">
     <div class="container py-5">
         <div class="row g-5 align-items-center">
             <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-israel-blue text-uppercase mb-3">Darmowa Wycena</h6>
-                <h1 class="mb-5">Poproś o darmową wycenę projektu!</h1>
-                <p class="mb-5">Masz gotowy projekt konstrukcji lub potrzebujesz montażu stolarki? Opisz swoje potrzeby, a przygotujemy dla Ciebie rzetelną kalkulację kosztów w ciągu 24h.</p>
+                <h1 class="mb-5">Opisz czego potrzebujesz</h1>
+                <p class="mb-5">Potrzebujesz instalacji, naprawy lub modernizacji systemu hydraulicznego? Opisz swój problem lub zakres prac — skontaktujemy się w ciągu 24h z propozycją rozwiązania.</p>
                 <div class="d-flex align-items-center">
-                    <i class="fa fa-phone fa-2x flex-shrink-0 bg-israel-blue p-3 text-white"></i>
+                    <i class="fa fa-phone fa-2x flex-shrink-0 bg-stalmos p-3 text-white"></i>
                     <div class="ps-4">
                         <h6>Zadzwoń do nas!</h6>
-                        <h3 class="text-israel-blue m-0">+48 880 741 813</h3> </div>
+                        <h3 class="text-stalmos m-0">+48 880 741 813</h3> </div>
                 </div>
             </div>
             <div class="col-lg-7">
@@ -547,28 +240,28 @@
                     <form action="https://formsubmit.co/stalmos@op.pl" method="POST">
                         <div class="row g-3">
                             <div class="col-12 col-sm-6">
-                                <input type="text" name="name" class="form-control border-0" placeholder="Twoje Imię i Nazwisko" style="height: 55px;" required>
+                                <input type="text" name="name" class="form-control border-0 form-h-55" placeholder="Twoje Imię i Nazwisko" required>
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="email" name="email" class="form-control border-0" placeholder="Twój E-mail" style="height: 55px;" required>
+                                <input type="email" name="email" class="form-control border-0 form-h-55" placeholder="Twój E-mail" required>
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="text" name="phone" class="form-control border-0" placeholder="Numer Telefonu" style="height: 55px;" required>
+                                <input type="text" name="phone" class="form-control border-0 form-h-55" placeholder="Numer Telefonu" required>
                             </div>
                             <div class="col-12 col-sm-6">
-                                <select name="service" class="form-select border-0" style="height: 55px;" required>
+                                <select name="service" class="form-select border-0 form-h-55" required>
                                     <option selected disabled>Wybierz Usługę</option>
-                                    <option value="Konstrukcje Metalowe">Instalacje Grzewcze i Sanitarne</option>
-                                    <option value="Stolarka Budowlana">Hydraulika Domowa</option>
-                                    <option value="Naprawa i Konserwacja">Awarie i Naprawy</option>
+                                    <option value="Instalacje Systemów Hydraulicznych">Instalacje Systemów Hydraulicznych</option>
+                                    <option value="Hydraulika Domowa">Hydraulika Domowa</option>
+                                    <option value="Awarie i Naprawy">Awarie i Naprawy</option>
                                     <option value="Inne">Inne roboty specjalistyczne</option>
                                 </select>
                             </div>
                             <div class="col-12">
-                                <textarea name="message" class="form-control border-0" placeholder="Opisz krótko swój projekt (np. wymiary, materiał)" style="height: 120px;" required></textarea>
+                                <textarea name="message" class="form-control border-0 form-h-120" placeholder="Opisz problem lub zakres prac (np. wymiana pionu, montaż ogrzewania podłogowego, naprawa wycieku)" required></textarea>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-israel-blue text-white w-100 py-3" type="submit">Wyślij Prośbę o Wycenę</button>
+                                <button class="btn btn-stalmos text-white w-100 py-3" type="submit">Wyślij Zapytanie</button>
                             </div>
                         </div>
                     </form>
@@ -580,227 +273,52 @@
     <!-- Quote End -->
 
 
-    <!-- Team Start --
-    <div class="container-xxl py-5">
-        <div class="container py-5">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-israel-blue text-uppercase">Our Team</h6>
-                <h1 class="mb-5">Expert Team Members</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
-                    <div class="team-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
-                        </div>
-                        <h5 class="mb-0">Full Name</h5>
-                        <p>Designation</p>
-                        <div class="btn-slide mt-1">
-                            <i class="fa fa-share"></i>
-                            <span>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
-                        </div>
-                        <h5 class="mb-0">Full Name</h5>
-                        <p>Designation</p>
-                        <div class="btn-slide mt-1">
-                            <i class="fa fa-share"></i>
-                            <span>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInLeft" data-wow-delay="0.7s">
-                    <div class="team-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
-                        </div>
-                        <h5 class="mb-0">Full Name</h5>
-                        <p>Designation</p>
-                        <div class="btn-slide mt-1">
-                            <i class="fa fa-share"></i>
-                            <span>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
-                    <div class="team-item p-4">
-                        <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/team-4.jpg" alt="">
-                        </div>
-                        <h5 class="mb-0">Full Name</h5>
-                        <p>Designation</p>
-                        <div class="btn-slide mt-1">
-                            <i class="fa fa-share"></i>
-                            <span>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    Team End -->
-
-
-    <!-- Testimonial Start --
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="text-center">
-                <h6 class="text-israel-blue text-uppercase">Testimonial</h6>
-                <h1 class="mb-0">Our Clients Say!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-1.jpg"
-                            style="width: 80px; height: 80px;">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <p class="m-0">Profession</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-2.jpg"
-                            style="width: 80px; height: 80px;">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <p class="m-0">Profession</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-3.jpg"
-                            style="width: 80px; height: 80px;">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <p class="m-0">Profession</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-                <div class="testimonial-item p-4 my-5">
-                    <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
-                    <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-4.jpg"
-                            style="width: 80px; height: 80px;">
-                        <div class="ms-4">
-                            <h5 class="mb-1">Client Name</h5>
-                            <p class="m-0">Profession</p>
-                        </div>
-                    </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
-                        Clita erat ipsum et lorem et sit.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-     Testimonial End -->
-
-
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer py-4 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row g-4 justify-content-center">
-                
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-                    <div class="text-start">
-                        <h4 class="text-white mb-3">Dane Firmy</h4>
-                        <div class="d-flex align-items-start mb-2">
-                            <i class="fa fa-building fa-fw me-3 mt-1" style="color: #b8e3ff;"></i>
-                            <span class="text-white">Stalmos</span>
-                        </div>
-                        <div class="d-flex align-items-start mb-2">
-                            <i class="fa fa-id-card fa-fw me-3 mt-1" style="color: #b8e3ff;"></i>
-                            <span class="text-white">NIP: 6783192667</span>
-                        </div>
-                        <div class="d-flex align-items-start mb-0">
-                            <i class="fa fa-id-card fa-fw me-3 mt-1" style="color: #b8e3ff;"></i>
-                            <span class="text-white">REGON: 389936088</span>
-                        </div>
+    <footer class="border-top footer-light">
+        <div class="container py-5">
+            <div class="row g-4 justify-content-between">
+                <div class="col-lg-3 col-md-6">
+                    <img src="stalmos_logo_simple_hori.png" class="footer-logo" alt="Stalmos">
+                    <p class="mb-0 footer-muted">Profesjonalne usługi hydrauliczne w Krakowie i okolicach.</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3 footer-heading">Nawigacja</h6>
+                    <div class="d-flex flex-column footer-links">
+                        <a href="index.html" class="text-decoration-none footer-link">Strona Główna</a>
+                        <a href="about.html" class="text-decoration-none footer-link">O nas</a>
+                        <a href="service.html" class="text-decoration-none footer-link">Usługi</a>
+                        <a href="contact.html" class="text-decoration-none footer-link">Kontakt</a>
                     </div>
                 </div>
-    
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-                    <div class="text-start">
-                        <h4 class="text-white mb-3">Kontakt</h4>
-                        <div class="d-flex align-items-start mb-2">
-                            <i class="fa fa-map-marker-alt fa-fw me-3 mt-1" style="color: #b8e3ff;"></i>
-                            <span class="text-white">Kraków, Polska</span>
-                        </div>
-                        <div class="d-flex align-items-start mb-2">
-                            <i class="fa fa-phone-alt fa-fw me-3 mt-1" style="color: #b8e3ff;"></i>
-                            <a href="tel:+48880741813" class="text-white text-decoration-none">+48 880 741 813</a>
-                        </div>
-                        <div class="d-flex align-items-start mb-0">
-                            <i class="fa fa-envelope fa-fw me-3 mt-1" style="color: #b8e3ff;"></i>
-                            <a href="mailto:stalmos@op.pl" class="text-white text-decoration-none">stalmos@op.pl</a>
-                        </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3 footer-heading">Kontakt</h6>
+                    <div class="d-flex flex-column footer-contact-group">
+                        <span><i class="fa fa-map-marker-alt me-2 footer-icon"></i>Kraków, Polska</span>
+                        <a href="tel:+48880741813" class="text-decoration-none" class="footer-link"><i class="fa fa-phone me-2 footer-icon"></i>+48 880 741 813</a>
+                        <a href="mailto:stalmos@op.pl" class="text-decoration-none" class="footer-link"><i class="fa fa-envelope me-2 footer-icon"></i>stalmos@op.pl</a>
                     </div>
                 </div>
-    
-                <div class="col-lg-4 col-md-6 d-flex justify-content-center">
-                    <div class="text-start">
-                        <h4 class="text-white mb-3">Godziny Pracy</h4>
-                        <div class="d-flex align-items-start mb-2">
-                            <i class="fa fa-clock fa-fw me-3 mt-1" style="color: #b8e3ff;"></i>
-                            <span class="text-white">Poniedziałek - Piątek: 08:00 - 17:00</span>
-                        </div>
-                        <div class="d-flex align-items-start mb-0">
-                            <i class="fa fa-exclamation-triangle fa-fw me-3 mt-1" style="color: #b8e3ff;"></i>
-                            <span class="text-white">Awarie: Szybki dojazd w Krakowie</span>
-                        </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3 footer-heading">Dane firmy</h6>
+                    <div class="footer-company-data">
+                        NIP: 6783192667<br>
+                        REGON: 389936088<br>
+                        Pn-Pt: 08:00 - 17:00
                     </div>
-                </div>
-    
-            </div>
-        </div>
-    </div>
-
-    <div class="container justify-content-center">
-        <div class="copyright border-top border-secondary mt-3 pt-3">
-            <div class="row">
-                <div class="col-12 text-center">
-                    &copy; Stalmos, Wszelkie Prawa Zastrzeżone
                 </div>
             </div>
         </div>
-    </div>
+        <div class="border-top">
+            <div class="container py-3">
+                <p class="text-center mb-0" class="footer-copy">&copy; Stalmos, Wszelkie Prawa Zastrzeżone</p>
+            </div>
+        </div>
+    </footer>
     <!-- Footer End -->
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-israel-blue text-white btn-lg-square rounded-40 back-to-top"><i
+    <a href="#" class="btn btn-lg btn-stalmos text-white btn-lg-square rounded-40 back-to-top"><i
             class="bi bi-arrow-up"></i></a>
 
 
@@ -811,10 +329,12 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
 
 </html>
+
+
+
