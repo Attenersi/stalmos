@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Informacja o przetwarzaniu danych osobowych (RODO) — Stalmos</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Zilla+Slab:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body { background: #F5F0E3; color: #26302A; font-family: 'Archivo', sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #2F5134; }
+  a:hover { color: #4F7A46; }
+  ::selection { background: #2F5134; color: #F5F0E3; }
+</style>
+</helmet>
+
+<div style="min-height:100vh;">
+  <template id="__bundler_thumbnail">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <rect width="100" height="100" rx="18" fill="#2F5134"></rect>
+      <text x="50" y="48" font-family="Georgia, serif" font-size="34" font-weight="700" fill="#F5F0E3" text-anchor="middle">S</text>
+      <text x="50" y="72" font-family="Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="1.5" fill="#9BB08A" text-anchor="middle">RODO</text>
+    </svg>
+  </template>
+
+  <header style="position:sticky;top:0;z-index:50;background:rgba(245,240,227,0.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(38,48,42,0.12);">
+    <div style="max-width:860px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;gap:20px;">
+      <a href="index.html" style="display:flex;flex-direction:column;line-height:1;text-decoration:none;">
+        <span style="font-family:'Zilla Slab';font-weight:700;font-size:22px;letter-spacing:0.5px;color:#2F5134;">STALMOS</span>
+        <span style="display:flex;align-items:center;gap:7px;margin-top:5px;">
+          <span style="width:15px;height:2px;background:#9BB08A;flex:none;"></span>
+          <span style="font-family:'Archivo';font-weight:600;font-size:8px;letter-spacing:0.17em;text-transform:uppercase;color:#4F7A46;white-space:nowrap;">Serwis maszyn ogrodniczych</span>
+        </span>
+      </a>
+      <a href="index.html" style="margin-left:auto;font-family:'Archivo';font-weight:700;font-size:14px;color:#26302A;text-decoration:none;display:inline-flex;align-items:center;gap:8px;border:1.5px solid rgba(38,48,42,0.2);padding:10px 16px;border-radius:10px;">← Powrót na stronę główną</a>
+    </div>
+  </header>
+
+  <main style="max-width:860px;margin:0 auto;padding:56px 24px 40px;">
+    <div style="font-family:'Archivo';font-weight:700;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:#4F7A46;margin-bottom:14px;">Klauzula informacyjna · art. 13 RODO</div>
+    <h1 style="font-family:'Zilla Slab';font-weight:700;font-size:clamp(34px,5vw,48px);line-height:1.04;letter-spacing:0;margin:0 0 16px;text-wrap:balance;">Informacja o przetwarzaniu danych osobowych</h1>
+    <p style="font-size:17px;line-height:1.6;color:#3C463B;margin:0 0 40px;max-width:640px;">Poniższa klauzula opisuje, w jaki sposób P.H.U. Stalmos przetwarza dane osobowe podane w formularzu zgłoszeniowym na stronie internetowej.</p>
+
+    <section style="background:#FCFAF2;border:1px solid #E4DAC3;border-radius:20px;padding:clamp(24px,4vw,44px);box-shadow:0 20px 50px -38px rgba(38,48,42,0.4);display:flex;flex-direction:column;gap:34px;">
+
+      <div>
+        <h2 style="font-family:'Zilla Slab';font-weight:700;font-size:22px;margin:0 0 10px;letter-spacing:0;"><span style="color:#9BB08A;">1.</span> Administrator danych osobowych</h2>
+        <p style="font-size:15.5px;line-height:1.65;color:#3C463B;margin:0;">Administratorem Twoich danych osobowych jest <strong>P.H.U. Stalmos</strong>, Staniątki 560, 32-005 Niepołomice, NIP: 6791035155, e-mail: <a href="mailto:stalmos@op.pl">stalmos@op.pl</a>, telefon: <a href="tel:+48880741813">+48 880 741 813</a>.</p>
+      </div>
+
+      <div>
+        <h2 style="font-family:'Zilla Slab';font-weight:700;font-size:22px;margin:0 0 10px;letter-spacing:0;"><span style="color:#9BB08A;">2.</span> Inspektor Ochrony Danych</h2>
+        <p style="font-size:15.5px;line-height:1.65;color:#3C463B;margin:0;">Administrator nie wyznaczył Inspektora Ochrony Danych — przepisy RODO nie nakładają takiego obowiązku na działalność o tej skali i charakterze przetwarzania.</p>
+      </div>
+
+      <div>
+        <h2 style="font-family:'Zilla Slab';font-weight:700;font-size:22px;margin:0 0 10px;letter-spacing:0;"><span style="color:#9BB08A;">3.</span> Cele przetwarzania, podstawy prawne i okres przechowywania</h2>
+        <p style="font-size:15.5px;line-height:1.65;color:#3C463B;margin:0 0 18px;">Poniższa tabela przedstawia cele, dla których przetwarzamy dane osobowe zebrane w formularzu, wraz z podstawą prawną i okresem przechowywania.</p>
+        <div style="overflow-x:auto;">
+          <table style="width:100%;border-collapse:collapse;font-size:14px;line-height:1.55;min-width:560px;">
+            <thead>
+              <tr>
+                <th style="text-align:left;vertical-align:top;background:#2F5134;color:#F5F0E3;font-family:'Archivo';font-weight:700;font-size:12.5px;letter-spacing:0.03em;padding:12px 14px;border:1px solid #2F5134;">Cel przetwarzania</th>
+                <th style="text-align:left;vertical-align:top;background:#2F5134;color:#F5F0E3;font-family:'Archivo';font-weight:700;font-size:12.5px;letter-spacing:0.03em;padding:12px 14px;border:1px solid #2F5134;">Podstawa prawna</th>
+                <th style="text-align:left;vertical-align:top;background:#2F5134;color:#F5F0E3;font-family:'Archivo';font-weight:700;font-size:12.5px;letter-spacing:0.03em;padding:12px 14px;border:1px solid #2F5134;">Okres przechowywania</th>
+                <th style="text-align:left;vertical-align:top;background:#2F5134;color:#F5F0E3;font-family:'Archivo';font-weight:700;font-size:12.5px;letter-spacing:0.03em;padding:12px 14px;border:1px solid #2F5134;">Uwagi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="vertical-align:top;padding:13px 14px;border:1px solid #E4DAC3;color:#26302A;font-weight:600;">Obsługa zgłoszenia serwisowego / naprawy sprzętu</td>
+                <td style="vertical-align:top;padding:13px 14px;border:1px solid #E4DAC3;color:#3C463B;">art. 6 ust. 1 lit. b RODO — wykonanie usługi</td>
+                <td style="vertical-align:top;padding:13px 14px;border:1px solid #E4DAC3;color:#3C463B;">Przez czas realizacji zgłoszenia oraz okres rozpatrywania reklamacji dotyczącej wykonanej usługi (przyjęty standardowo: 2 lata od zakończenia usługi)</td>
+                <td style="vertical-align:top;padding:13px 14px;border:1px solid #E4DAC3;color:#7A8172;">Okres przyjęty jako dobra praktyka biznesowa, analogicznie do terminu rękojmi (art. 568 §1 KC), który formalnie dotyczy sprzedaży towarów</td>
+              </tr>
+              <tr style="background:#F7F2E4;">
+                <td style="vertical-align:top;padding:13px 14px;border:1px solid #E4DAC3;color:#26302A;font-weight:600;">Ustalenie, dochodzenie lub obrona przed roszczeniami związanymi z wykonaną usługą</td>
+                <td style="vertical-align:top;padding:13px 14px;border:1px solid #E4DAC3;color:#3C463B;">art. 6 ust. 1 lit. f RODO — uzasadniony interes</td>
+                <td style="vertical-align:top;padding:13px 14px;border:1px solid #E4DAC3;color:#3C463B;">Do upływu terminu przedawnienia roszczeń (co do zasady 6 lat od zakończenia usługi, zgodnie z ogólnym terminem przedawnienia roszczeń z Kodeksu cywilnego)</td>
+                <td style="vertical-align:top;padding:13px 14px;border:1px solid #E4DAC3;color:#7A8172;">Dotyczy sytuacji spornych, niezależnie od reklamacji</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <h2 style="font-family:'Zilla Slab';font-weight:700;font-size:22px;margin:0 0 10px;letter-spacing:0;"><span style="color:#9BB08A;">4.</span> Uzasadniony interes Administratora</h2>
+        <p style="font-size:15.5px;line-height:1.65;color:#3C463B;margin:0;">W zakresie, w jakim podstawą przetwarzania jest art. 6 ust. 1 lit. f RODO, prawnie uzasadnionym interesem Administratora jest możliwość ustalenia, dochodzenia i obrony przed roszczeniami związanymi z wykonaną usługą serwisową.</p>
+      </div>
+
+      <div>
+        <h2 style="font-family:'Zilla Slab';font-weight:700;font-size:22px;margin:0 0 10px;letter-spacing:0;"><span style="color:#9BB08A;">5.</span> Odbiorcy danych</h2>
+        <p style="font-size:15.5px;line-height:1.65;color:#3C463B;margin:0 0 10px;">Dane osobowe przechodzą wyłącznie przez podmiot świadczący usługi hostingowe dla strony internetowej, za pośrednictwem której przyjmowane jest zgłoszenie serwisowe. Administrator nie udostępnia danych żadnym innym podmiotom (np. biurom rachunkowym, kurierom czy podwykonawcom).</p>
+        <p style="font-size:15.5px;line-height:1.65;color:#3C463B;margin:0;">Dane nie są przekazywane do państw trzecich (poza Europejski Obszar Gospodarczy) — hosting strony znajduje się w Polsce.</p>
+      </div>
+
+      <div>
+        <h2 style="font-family:'Zilla Slab';font-weight:700;font-size:22px;margin:0 0 10px;letter-spacing:0;"><span style="color:#9BB08A;">6.</span> Czy podanie danych jest obowiązkowe?</h2>
+        <p style="font-size:15.5px;line-height:1.65;color:#3C463B;margin:0;">Podanie imienia, nazwiska i numeru telefonu jest niezbędne do obsługi zgłoszenia serwisowego — bez tych danych nie jest możliwe przyjęcie i zrealizowanie zgłoszenia. Podanie marki i modelu sprzętu jest dobrowolne i nie wpływa na możliwość obsługi zgłoszenia.</p>
+      </div>
+
+      <div>
+        <h2 style="font-family:'Zilla Slab';font-weight:700;font-size:22px;margin:0 0 10px;letter-spacing:0;"><span style="color:#9BB08A;">7.</span> Zautomatyzowane podejmowanie decyzji i profilowanie</h2>
+        <p style="font-size:15.5px;line-height:1.65;color:#3C463B;margin:0;">Administrator nie podejmuje wobec Ciebie decyzji w sposób zautomatyzowany, w tym w formie profilowania.</p>
+      </div>
+
+      <div>
+        <h2 style="font-family:'Zilla Slab';font-weight:700;font-size:22px;margin:0 0 10px;letter-spacing:0;"><span style="color:#9BB08A;">8.</span> Twoje prawa</h2>
+        <p style="font-size:15.5px;line-height:1.65;color:#3C463B;margin:0 0 12px;">W związku z przetwarzaniem danych osobowych przysługują Ci następujące prawa:</p>
+        <ul style="font-size:15.5px;line-height:1.7;color:#3C463B;margin:0;padding-left:22px;display:flex;flex-direction:column;gap:5px;">
+          <li>prawo dostępu do treści swoich danych oraz otrzymania ich kopii,</li>
+          <li>prawo do sprostowania (poprawiania) danych,</li>
+          <li>prawo do usunięcia danych,</li>
+          <li>prawo do ograniczenia przetwarzania danych,</li>
+          <li>prawo do przenoszenia danych,</li>
+          <li>prawo do wniesienia sprzeciwu wobec przetwarzania danych opartego na art. 6 ust. 1 lit. f RODO.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 style="font-family:'Zilla Slab';font-weight:700;font-size:22px;margin:0 0 10px;letter-spacing:0;"><span style="color:#9BB08A;">9.</span> Prawo do wniesienia skargi</h2>
+        <p style="font-size:15.5px;line-height:1.65;color:#3C463B;margin:0;">Masz prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa), jeżeli uznasz, że przetwarzanie Twoich danych osobowych narusza przepisy RODO.</p>
+      </div>
+
+      <div>
+        <h2 style="font-family:'Zilla Slab';font-weight:700;font-size:22px;margin:0 0 10px;letter-spacing:0;"><span style="color:#9BB08A;">10.</span> Źródło danych</h2>
+        <p style="font-size:15.5px;line-height:1.65;color:#3C463B;margin:0;">Twoje dane osobowe pochodzą bezpośrednio od Ciebie — zostały podane w formularzu zgłoszeniowym na stronie.</p>
+      </div>
+
+    </section>
+
+    <div style="margin-top:34px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+      <a href="index.html#kontakt" style="font-family:'Archivo';font-weight:700;font-size:15px;color:#F5F0E3;background:#2F5134;padding:13px 22px;border-radius:11px;text-decoration:none;">← Wróć do formularza</a>
+      <span style="font-size:13px;color:#7A8172;">P.H.U. Stalmos · Staniątki 560, 32-005 Niepołomice</span>
+    </div>
+  </main>
+
+  <footer style="background:#26302A;color:#8A9A7C;margin-top:20px;">
+    <div style="max-width:860px;margin:0 auto;padding:26px 24px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13px;">
+      <span>© 2026 Stalmos Serwis. Wszelkie prawa zastrzeżone.</span>
+      <a href="index.html" style="color:#B7C2A8;text-decoration:none;">stalmos.pl</a>
+    </div>
+  </footer>
+</div>
+</x-dc>
+</body>
+</html>
