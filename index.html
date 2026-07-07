@@ -63,7 +63,7 @@
 <script src="image-slot.js"></script>
 </helmet>
 
-<div style="max-width:100%;overflow-x:hidden;">
+<div style="max-width:100%;overflow-x:clip;">
 
   <template id="__bundler_thumbnail">
     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -336,14 +336,14 @@
           <form onSubmit="{{ submit }}" style="display:flex;flex-direction:column;gap:18px;">
             <div class="form-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
               <label style="display:flex;flex-direction:column;gap:7px;font-weight:600;font-size:14px;">{{ fName }}
-                <input required="" name="imie" type="text" placeholder="{{ phName }}" style="border:1.5px solid rgba(38,48,42,0.18);border-radius:10px;padding:12px 14px;font-size:15px;background:#F5F0E3;color:#26302A;" style-focus="border-color:#2F5134;outline:none;">
+                <input required="{{ true }}" onInvalid="{{ onInvalid }}" onChange="{{ clearInvalid }}" name="imie" type="text" placeholder="{{ phName }}" style="border:1.5px solid rgba(38,48,42,0.18);border-radius:10px;padding:12px 14px;font-size:15px;background:#F5F0E3;color:#26302A;" style-focus="border-color:#2F5134;outline:none;">
               </label>
               <label style="display:flex;flex-direction:column;gap:7px;font-weight:600;font-size:14px;">{{ fPhone }}
-                <input required="" name="telefon" type="tel" placeholder="{{ phPhone }}" style="border:1.5px solid rgba(38,48,42,0.18);border-radius:10px;padding:12px 14px;font-size:15px;background:#F5F0E3;color:#26302A;" style-focus="border-color:#2F5134;outline:none;">
+                <input required="{{ true }}" onInvalid="{{ onInvalid }}" onChange="{{ clearInvalid }}" name="telefon" type="tel" placeholder="{{ phPhone }}" style="border:1.5px solid rgba(38,48,42,0.18);border-radius:10px;padding:12px 14px;font-size:15px;background:#F5F0E3;color:#26302A;" style-focus="border-color:#2F5134;outline:none;">
               </label>
             </div>
             <label style="display:flex;flex-direction:column;gap:7px;font-weight:600;font-size:14px;">{{ fType }}
-              <select required="" name="sprzet" style="border:1.5px solid rgba(38,48,42,0.18);border-radius:10px;padding:12px 14px;font-size:15px;background:#F5F0E3;color:#26302A;" style-focus="border-color:#2F5134;outline:none;">
+              <select required="{{ true }}" onInvalid="{{ onInvalid }}" onChange="{{ clearInvalid }}" name="sprzet" style="border:1.5px solid rgba(38,48,42,0.18);border-radius:10px;padding:12px 14px;font-size:15px;background:#F5F0E3;color:#26302A;" style-focus="border-color:#2F5134;outline:none;">
                 <option value="">{{ selectDefault }}</option>
                 <sc-for list="{{ equipTypes }}" as="o" hint-placeholder-count="10">
                   <option>{{ o }}</option>
@@ -354,10 +354,10 @@
               <input name="model" type="text" placeholder="{{ phModel }}" style="border:1.5px solid rgba(38,48,42,0.18);border-radius:10px;padding:12px 14px;font-size:15px;background:#F5F0E3;color:#26302A;" style-focus="border-color:#2F5134;outline:none;">
             </label>
             <label style="display:flex;flex-direction:column;gap:7px;font-weight:600;font-size:14px;">{{ fDesc }}
-              <textarea required="" name="opis" rows="4" placeholder="{{ phDesc }}" style="border:1.5px solid rgba(38,48,42,0.18);border-radius:10px;padding:12px 14px;font-size:15px;background:#F5F0E3;color:#26302A;resize:vertical;"></textarea>
+              <textarea required="{{ true }}" onInvalid="{{ onInvalid }}" onChange="{{ clearInvalid }}" name="opis" rows="4" placeholder="{{ phDesc }}" style="border:1.5px solid rgba(38,48,42,0.18);border-radius:10px;padding:12px 14px;font-size:15px;background:#F5F0E3;color:#26302A;resize:vertical;"></textarea>
             </label>
             <label style="display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:#7A8172;line-height:1.45;">
-              <input required="" type="checkbox" style="margin-top:3px;accent-color:#2F5134;width:16px;height:16px;flex:none;">
+              <input required="{{ true }}" onInvalid="{{ onInvalid }}" onChange="{{ clearInvalid }}" name="rodo" type="checkbox" style="margin-top:3px;accent-color:#2F5134;width:16px;height:16px;flex:none;">
               {{ fConsent }}
             </label>
             <div style="margin-top:-4px;font-size:11.5px;line-height:1.55;color:#7A8172;">
@@ -684,6 +684,12 @@ const RODO_LINK = {
   uk: "Інформації про обробку персональних даних (GDPR)",
   de: "der Datenschutzinformation (DSGVO)"
 };
+const FORM_MSG = {
+  pl: { req: "Uzupełnij to pole.", consent: "Zaznacz zgodę, aby wysłać zgłoszenie." },
+  en: { req: "Please fill in this field.", consent: "Please accept the consent to send the request." },
+  uk: { req: "Заповніть це поле.", consent: "Позначте згоду, щоб надіслати заявку." },
+  de: { req: "Bitte füllen Sie dieses Feld aus.", consent: "Bitte stimmen Sie der Einwilligung zu, um die Anfrage zu senden." }
+};
 
 class Component extends DCLogic {
   state = {
@@ -805,6 +811,7 @@ class Component extends DCLogic {
     const lang = DICT[this.state.lang] ? this.state.lang : "pl";
     const t = DICT[lang];
     const email = this.props.workshopEmail || "stalmos@op.pl";
+    const fm = FORM_MSG[lang] || FORM_MSG.pl;
     return {
       ...t,
       submitted: this.state.submitted,
@@ -819,12 +826,19 @@ class Component extends DCLogic {
       rodoLinkText: RODO_LINK[lang] || RODO_LINK.pl,
       lang: lang,
       onLang: (e) => this.setLang(e.target.value),
+      onInvalid: (e) => { e.target.setCustomValidity(e.target.type === "checkbox" ? fm.consent : fm.req); },
+      clearInvalid: (e) => { e.target.setCustomValidity(""); },
       toggleMenu: () => this.setState((s) => ({ menuOpen: !s.menuOpen })),
       closeMenu: () => this.setState({ menuOpen: false }),
       submit: (e) => {
         e.preventDefault();
         const f = e.target;
         const g = (n) => ((f.elements[n] && f.elements[n].value) || "").trim();
+        const consent = f.elements.rodo;
+        if (!consent || !consent.checked) {
+          if (consent && consent.reportValidity) consent.reportValidity();
+          return;
+        }
         const m = t.mail;
         const subject = m.mSubject + (g("sprzet") || m.mFallback);
         const mailtoFallback = () => {
